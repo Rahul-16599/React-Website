@@ -70,11 +70,11 @@ margin: 3%;
   padding: 10px;
   margin: 20px;
   border-radius: 10px;
-  background-color: white;
+  background-color: rgb(98, 4, 97);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .todoappdiv{
-  background-color: lightgray;
+  
   display: flex;
   justify-content: center;
   align-items: center;

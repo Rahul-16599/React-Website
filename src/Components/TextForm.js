@@ -11,6 +11,14 @@ export default function TextForm(props) {
         let newText = "";
         setText(newText);
     }
+    const handleCopy = () => {
+        navigator.clipboard.writeText(text);
+      }
+
+      const handleExtraSpaces = () => {
+        let newText = text.split(/[ ]+/);
+           setText(newText.join(" "));
+      }
 
     const handleLowerCase =  () => {
         let newText = text.toLowerCase();
@@ -37,9 +45,11 @@ export default function TextForm(props) {
                 ></textarea>
 
                 <div className="Buttons">
-                    <button className="uppercase-btn" onClick={handleClearCase}>Clear text</button>
-                    <button className="uppercase-btn" onClick={handleLowerCase}>Convert to Lowercase</button>
-                    <button className="uppercase-btn" onClick={handleUpCase}>Convert to Uppercase</button> 
+                    <button className="uppercase-btn button btn btn-primary" onClick={handleClearCase}>Clear text</button>
+                    <button className="uppercase-btn button btn btn-primary" onClick={handleLowerCase}>Convert to Lowercase</button>
+                    <button className="uppercase-btn button btn btn-primary" onClick={handleUpCase}>Convert to Uppercase</button>
+                    <button className="uppercase-btn button btn btn-primary" onClick={handleCopy}>Copy text</button> 
+                    <button className="uppercase-btn button btn btn-primary" onClick={handleExtraSpaces}>Remove extra spaces</button> 
                 </div>
                 
             </div>

@@ -44,22 +44,23 @@ export default function TextForm(props) {
                     id="floatingTextarea"
                 ></textarea>
 
-                <div className="Buttons">
-                    <button className="uppercase-btn button btn btn-primary" onClick={handleClearCase}>Clear text</button>
-                    <button className="uppercase-btn button btn btn-primary" onClick={handleLowerCase}>Convert to Lowercase</button>
-                    <button className="uppercase-btn button btn btn-primary" onClick={handleUpCase}>Convert to Uppercase</button>
-                    <button className="uppercase-btn button btn btn-primary" onClick={handleCopy}>Copy text</button> 
-                    <button className="uppercase-btn button btn btn-primary" onClick={handleExtraSpaces}>Remove extra spaces</button> 
+                <div className="buttons ">
+                    <button className="uppercase-btn button btn btn-primary mx-2 my-1" onClick={handleClearCase}>Clear text</button>
+                    <button className="uppercase-btn button btn btn-primary mx-2 my-1" onClick={handleLowerCase}>Convert to Lowercase</button>
+                    <button className="uppercase-btn button btn btn-primary mx-2 my-1" onClick={handleUpCase}>Convert to Uppercase</button>
+                    <button className="uppercase-btn button btn btn-primary mx-2 my-1" onClick={handleCopy}>Copy text</button> 
+                    <button className="uppercase-btn button btn btn-primary mx-2 my-1" onClick={handleExtraSpaces}>Remove extra spaces</button> 
                 </div>
                 
             </div>
-        </div>
+        
 
-        <div className="summarycontainer" >
-            <h1>Your text summary</h1>
-            <p> {text.split(" ").length} words and {text.length} characters</p>
-            <p> {0.008 *text.split(" ").length} Minutes to read</p>
-        </div>
+            <div className="summarycontainer" >
+                <h1>Your text summary</h1>
+                <p> {text.split(" ").filter((element) => {return element.length!==0}).length} words and {text.length} characters</p>
+                <p> {0.008 *text.split(" ").filter((element) => {return element.length!==0}).length} Minutes to read</p>
+            </div>
+        </div>    
     </>
   );
 }

@@ -1,14 +1,30 @@
 import './App.css';
 import Navbar from './Components/Navbar';
+import About from './Components/About';
 import TextForm from './Components/TextForm';
 import Todoitems from './Components/Todoitems'
 import Button from './Components/Button';
 import Header from './Components/Header';
+
+
 import React, {useState} from 'react';
+
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
+import Home from './Components/Home';
+import Todoapp from './Components/Todoapp';
+import Rahul from './Rahul';
+import Sidebar from './Components/Sidebar';
+
 
 
 
 function App() {
+  
   const [mode, setMode] = useState("light");
    const togglemode = () => {
       if (mode === "dark"){
@@ -24,22 +40,18 @@ function App() {
   }
   return (
      <> 
-       <Navbar title = "Textutils" aboutText = "About US" mode ={mode} togglemode = {togglemode}/>
-          <div className="container my-3">
-            <TextForm heading = "Enter Text to analyze"/>
-          </div>
-          <div className='todoappdiv'>
-          <div className='todo-container'> 
-                <Header />
-                <Todoitems text= "Eat"/>
-                <Todoitems text= "Code"/>
-                <Todoitems text= "Work"/>
-                <Todoitems text= "Sleep"/>
-                <Todoitems text= "Repeat"/>
-                < Button />
-            </div>
-          </div>
-          
+        <Router>
+            <Navbar title = "Rahul Ingle" aboutText = "About"  mode ={mode} togglemode = {togglemode}/>
+           
+            
+              <Routes>
+                  <Route path="/" element =  {<Rahul />}> </Route>
+                  <Route path="/TextUtils" element =  {<Home />}> </Route>
+                  <Route path="/about" element = {<About />}> </Route>
+                  <Route path="/todoapp" element =  {<Todoapp />}> </Route>
+              </Routes>
+              
+        </Router>   
      </>
   );
 }

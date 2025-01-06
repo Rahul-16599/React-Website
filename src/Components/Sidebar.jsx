@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from 'react-router-dom'
 
+
 export default function Sidebar() {
   return (
     <>
-      
+      <div className="d-flex">
         <nav
           className="navbar bg-dark navbar-dark flex-column vh-100"
           style={{ width: "14%"}}
@@ -34,8 +35,11 @@ export default function Sidebar() {
           </ul>
         </nav>
 
-       
-      
+        <div className="flex-grow-1 p-4">
+          <h1>Welcome to the Page</h1>
+             
+        </div>
+      </div>
     </>
   );
 }

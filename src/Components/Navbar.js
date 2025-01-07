@@ -6,7 +6,7 @@ export default function Navbar(props) {
   return (
     <>
    
-    <nav className={`navbar navbar-expand-lg bg-body-tertiary navbar-${props.mode} bg-${props.mode}`}>
+    <nav className={`navbar navbar-expand-lg bg-body-tertiary `}>
   <div className="container-fluid">
     <div className='img mx-2'> </div>
     <Link className="navbar-brand" to="/">{props.title}</Link>
@@ -16,16 +16,13 @@ export default function Navbar(props) {
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
-          <Link className="nav-link active" aria-current="page" to="/TextUtils">TextUtils</Link>
+          <Link className="nav-link active " aria-current="page" to="/TextUtils">TextUtils</Link>
         </li>
         <li className="nav-item">
           <Link className="nav-link active" aria-current="page" to="/Todoapp">Todoiie</Link>
         </li>
         <li className="nav-item">
           <a className="nav-link active" aria-current="page" href="https://rahulingle.freewebhostmost.com/" target="_blank">My Website</a>
-        </li>
-        <li className="nav-item">
-          <Link className="nav-link" to="/About">{props.aboutText}</Link>
         </li>
         <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">

@@ -12,23 +12,46 @@
 .form-floating{
 margin: 3%;
 }
-
+.container-fluid{
+  
+  background-color: #232F3E;
+}
+.navbar
+{
+  padding: 1px;
+  color: white;
+}
+.navbar-nav .nav-link.active{
+  color: #FFFFFF;
+}
+.navbar-brand {
+  color: #FFFFFF;
+}
+.nav-link {
+  color: #FFFFFF;
+}
+.textform-heading{
+  background-color: pink;
+  margin: 2%;
+  margin-top: 20px;
+  padding: 5px;
+}
 .uppercase-btn{
   margin-top: 10px;
   border-radius: 3%;
 }
 .form{
   width: 100%;
-  height: 20vh;
+  height: 25vh;
   padding: 5px;
   border: none;
   background-color: pink;
 }
 .summarycontainer{
   background-color: pink;
-  height: 20vh;
-  margin: 4%;
-  margin-top: 70px;
+  height: 22vh;
+  margin: 3%;
+  margin-top: 20px;
   padding: 5px;
 }
 
@@ -40,6 +63,7 @@ margin: 3%;
   padding: 10px;
   margin: 20px;
   border-radius: 10px;
+  color: white;
   background-color: rgb(98, 4, 97);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -76,8 +100,10 @@ margin: 3%;
   display: flex;
   flex-direction: row;
 }
+
 .sidebar{
-  background-color: rgb(42, 41, 41);
+  background-color: rgb(98, 4, 97);
+  color: white;
   height: 100vh;
   width: 30vh;
   display: flex;

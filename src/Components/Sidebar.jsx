@@ -1,45 +1,57 @@
 import React from "react";
-import { Link } from 'react-router-dom'
-
+import { Link } from "react-router-dom";
 
 export default function Sidebar() {
   return (
     <>
-      <div className="d-flex">
-        <nav
-          className="navbar bg-dark navbar-dark flex-column vh-100"
-          style={{ width: "14%"}}
-        >
-          
-          <ul className="nav flex-column">
-            <li className="nav-item">
-              <Link className="nav-link text-white" to="/Rahul">
-                Rahul
-              </Link>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link text-white" href="#">
-                About
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link text-white" href="#">
-                Services
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link text-white" href="#">
-                Contact
-              </a>
-            </li>
-          </ul>
-        </nav>
-
-        <div className="flex-grow-1 p-4">
-          <h1>Welcome to the Page</h1>
-             
-        </div>
-      </div>
+      <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+        <li className="sidebar-items">
+          <Link className="nav-link active" aria-current="page" to="/TextUtils">
+            <div
+              className="sidebar-item-container"
+              style={{
+                margin: "5px",
+                height: "30px",
+                width: "150px",
+              }}
+            >
+              <div
+                className="logo-textutlis"
+                style={{
+                  backgroundColor: "green",
+                  marginRight: "20px",
+                  height: "30px",
+                  width: "30px",
+                }}
+              ></div>
+              TextUtils
+            </div>
+          </Link>
+        </li>
+        <li className="sidebar-items">
+          <Link className="nav-link active" aria-current="page" to="/Todoapp">
+            <div
+              className="sidebar-item-container"
+              style={{
+                margin: "5px",
+                height: "30px",
+                width: "150px",
+              }}
+            >
+              <div
+                className="logo-textutlis logo-todoapp"
+                style={{
+                  backgroundColor: "green",
+                  marginRight: "20px",
+                  height: "30px",
+                  width: "30px",
+                }}
+              ></div>
+              TodoApp
+            </div>
+          </Link>
+        </li>
+      </ul>
     </>
   );
 }

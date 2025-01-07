@@ -35,7 +35,7 @@ export default function TextForm(props) {
   return (
     <>
         <div className="container">
-           <h1>{props.heading}</h1> 
+         <h4 className="textform-heading">Enter text to analyze</h4>  
             <div className="form-floating">
                 <textarea
                     value = {text}

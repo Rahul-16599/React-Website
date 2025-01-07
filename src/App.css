@@ -30,6 +30,10 @@ margin: 3%;
 .nav-link {
   color: #FFFFFF;
 }
+.navbar-toggler-icon{
+  color: black;
+  background-color: white;
+}
 .textform-heading{
   background-color: pink;
   margin: 2%;
@@ -114,11 +118,16 @@ margin: 3%;
 }
 .sidebar-items{
   font-size: large;
-  font-weight: 600; 
+  font-weight: 500; 
 }
 .sidebar-item-container{
   display: flex;
 
+}
+.logo-app{
+  background-image: url(/public/News.png);
+  background-size: cover;
+  border-radius: 50%;
 }
 .logo-textutlis{
   background-image: url(/public/Textutils.jpeg);
@@ -137,4 +146,12 @@ margin: 3%;
   height: 100vh;
   width: 100%;
 }
+
+.card:hover{
+  transition: all 250ms ease-in-out;
+  transform: scale(1.08);
+  box-shadow: 5px 10px 30px rgba(7, 199, 81, 0.3);
+}
+
+
 

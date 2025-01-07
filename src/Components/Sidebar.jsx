@@ -5,6 +5,29 @@ export default function Sidebar() {
   return (
     <>
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+      <li className="sidebar-items">
+          <Link className="nav-link active" aria-current="page" to="/Newsapp">
+            <div
+              className="sidebar-item-container"
+              style={{
+                margin: "5px",
+                height: "30px",
+                width: "150px",
+              }}
+            >
+              <div
+                className="logo-app"
+                style={{
+                  backgroundColor: "green",
+                  marginRight: "20px",
+                  height: "30px",
+                  width: "30px",
+                }}
+              ></div>
+              NewsApp
+            </div>
+          </Link>
+        </li>
         <li className="sidebar-items">
           <Link className="nav-link active" aria-current="page" to="/TextUtils">
             <div

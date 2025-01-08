@@ -315,7 +315,7 @@ export default class Newsapp extends Component {
   render() {
     return (
       <div className="news-container">
-        <h4 className="mx-3 my-4 "> TOP HEADLINES</h4>
+        <h3 className="mx-3 my-4 text-center"> TOP HEADLINES</h3>
         {/* <h6>This is Fetch-API git branch</h6> */}
 
         <div className="row">

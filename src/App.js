@@ -9,6 +9,9 @@ import Todoapp from "./Components/Todoapp";
 import Rahul from "./Rahul";
 import Sidebar from "./Components/Sidebar";
 import Newsapp from "./Components/Newsapp";
+import Collapse from "./Components/Collapse"
+
+
 
 function App() {
   const [mode, setMode] = useState("light");
@@ -40,6 +43,7 @@ function App() {
                 <Route path="/TextUtils" element={<Home />}>{" "} </Route>
                 <Route path="/todoapp" element={<Todoapp />}>{" "}</Route>
                 <Route path="/Newsapp" element={<Newsapp />}>{" "} </Route>
+                <Route path="/Collapse" element={<Collapse />}>{" "} </Route>
               </Routes>
             </div>
         </div>

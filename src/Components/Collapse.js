@@ -4,7 +4,8 @@ export default class Collapse extends Component {
   render() {
     return (
       <div>
-        This is new Project
+        hello! This is new Project
+      
       </div>
     )
   }

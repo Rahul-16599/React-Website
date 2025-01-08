@@ -22,7 +22,7 @@ export default function Navbar(props) {
           <Link className="nav-link active" aria-current="page" to="/Todoapp">Todoiie</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="https://rahulingle.freewebhostmost.com/" target="_blank">My Website</a>
+          <a className="nav-link active" aria-current="page" href="https://rahulingle.freewebhostmost.com/" target="_blank"rel="noreferrer">My Website</a>
         </li>
         <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">

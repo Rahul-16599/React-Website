@@ -1,57 +1,51 @@
-
-
-
-.img{
+.img {
   height: 40px;
   width: 40px;
   border-radius: 50%;
   background-image: cover;
-  background-image: url(/public/favicon.ico);
-  
+  background-image: url(/public/favicon2.ico);
 }
-.form-floating{
-margin: 3%;
+.form-floating {
+  margin: 3%;
 }
-.container-fluid{
-  
-  background-color: #232F3E;
+.container-fluid {
+  background-color: #232f3e;
 }
-.navbar
-{
+.navbar {
   padding: 1px;
   color: white;
 }
-.navbar-nav .nav-link.active{
-  color: #FFFFFF;
+.navbar-nav .nav-link.active {
+  color: #ffffff;
 }
 .navbar-brand {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .nav-link {
-  color: #FFFFFF;
+  color: #ffffff;
 }
-.navbar-toggler-icon{
+.navbar-toggler-icon {
   color: black;
   background-color: white;
 }
-.textform-heading{
+.textform-heading {
   background-color: pink;
   margin: 2%;
   margin-top: 20px;
   padding: 5px;
 }
-.uppercase-btn{
+.uppercase-btn {
   margin-top: 10px;
   border-radius: 3%;
 }
-.form{
+.form {
   width: 100%;
   height: 25vh;
   padding: 5px;
   border: none;
   background-color: pink;
 }
-.summarycontainer{
+.summarycontainer {
   background-color: pink;
   height: 22vh;
   margin: 3%;
@@ -59,9 +53,7 @@ margin: 3%;
   padding: 5px;
 }
 
-
-
-.todo-container{
+.todo-container {
   height: 75%;
   width: 250px;
   padding: 10px;
@@ -69,89 +61,69 @@ margin: 3%;
   border-radius: 10px;
   color: white;
   background-color: rgb(98, 4, 97);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-.todoappdiv{
-  
+.todoappdiv {
   display: flex;
   justify-content: center;
   align-items: center;
- 
-  
 }
-.todo-items{
+.todo-items {
   display: flex;
   justify-content: space-between;
-  align-items: center; 
+  align-items: center;
 }
-.add-button{
-   padding: 5px;
-   margin-top: 10px;
-   width: 100%;
-   cursor: pointer;
-   border-radius: 10px;
+.add-button {
+  padding: 5px;
+  margin-top: 10px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 10px;
 }
-.todoitem-text{
-   margin-left: 5px;
+.todoitem-text {
+  margin-left: 5px;
 }
-.todo-header{
+.todo-header {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
-.maindiv{
+.maindiv {
   display: flex;
   flex-direction: row;
 }
 
-.sidebar{
-  background-color: rgb(98, 4, 97);
-  color: white;
-  height: 100vh;
-  width: 30vh;
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.sidebar-items {
   font-size: large;
+  font-weight: 500;
 }
-.sidebar-items{
-  font-size: large;
-  font-weight: 500; 
-}
-.sidebar-item-container{
+.sidebar-item-container {
   display: flex;
-
 }
-.logo-app{
+.logo-newsapp {
   background-image: url(/public/News.png);
   background-size: cover;
   border-radius: 50%;
 }
-.logo-textutlis{
+.logo-textutlis {
   background-image: url(/public/Textutils.jpeg);
   background-size: cover;
   border-radius: 50%;
 }
-.logo-todoapp{
+.logo-todoapp {
   background-image: url(/public/Todo.png);
   background-size: cover;
-  
 }
-.btn-light{
-     border: none;
+.btn-light {
+  border: none;
 }
-.mainarea{
+.mainarea {
   height: 100vh;
   width: 100%;
 }
 
-.card:hover{
+.card:hover {
   transition: all 250ms ease-in-out;
   transform: scale(1.08);
-  box-shadow: 5px 10px 30px rgba(7, 199, 81, 0.3);
+  box-shadow: 5px 10px 10px rgba(7, 199, 81, 0.3);
 }
-
-
-
